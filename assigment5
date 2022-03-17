@@ -1,0 +1,63 @@
+1)import re
+def textfind(text):
+    ffind = 'ab'
+    if re.search(ffind, text):
+        return text
+    else:
+        return "didnt find"
+
+text = input()
+print(textfind(text))
+
+
+
+2)import re
+def textfind(text):
+    ffind = 'abb'
+    fffind = 'abbb'
+    if re.search(ffind, text) or re.search(fffind, text):
+        return text
+    else:
+        return "didnt find"
+
+text = input()
+print(textfind(text))
+
+
+3)import re
+def textfind(text):
+        ffind = '^[a-z]+_[a-z]+$'
+        if re.search(ffind,  text):
+                return text
+        else:
+                return('didnt find')
+
+text = input()
+print(textfind(text))
+
+
+4)import re
+def textfind(text):
+        ffind = '[A-Z]+[a-z]+$'
+        if re.search(ffind, text):
+                return 'Found'
+        else:
+                return 'Didnt found'
+
+text = input()
+print(textfind(text))
+
+
+5)import re
+def textfind(text):
+        ffind = 'a.*?b$'
+        if re.search(ffind,  text):
+                return 'Found'
+        else:
+                return 'Didnt found'
+
+text = input()
+print(textfind(text))
+
+
+6)
